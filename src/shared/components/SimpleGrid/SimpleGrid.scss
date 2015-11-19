@@ -1,0 +1,36 @@
+:local(.SimpleGrid) {
+    .grid {
+        box-sizing: border-box;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    .cell {
+        box-sizing: border-box;
+        display: flex; 
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .cell-content {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    /*
+    > ol > li {
+        background: green;
+        display: inline-block;
+        box-sizing: border-box;
+        width: (100% / $cols);
+        .Panel {
+            background: blue;
+            overflow: hidden;
+        }
+    }
+    */
+}

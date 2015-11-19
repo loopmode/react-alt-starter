@@ -1,0 +1,60 @@
+{
+  "name": "react-component-starter",
+  "version": "0.5.1",
+  "description": "Boilerplate setup for building standalone react component packages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node webpack.dev-server",
+    "build": "babel src -d lib",
+    "build-watch": "babel src -d lib -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:loopmode/react-component-starter.git"
+  },
+  "keywords": [
+    "react",
+    "custom"
+  ],
+  "author": "Jovica Aleksic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/loopmode/react-component-starter/issues"
+  },
+  "homepage": "https://github.com/loopmode/react-component-starter",
+  "devDependencies": {
+    "autoprefixer": "^6.0.2",
+    "babel": "^5.6.14",
+    "babel-core": "^5.6.15",
+    "babel-eslint": "^3.1.19",
+    "babel-loader": "^5.2.2",
+    "classnames": "^2.1.3",
+    "css-loader": "^0.18.0",
+    "eslint": "^0.23.0",
+    "eslint-loader": "^0.14.0",
+    "eslint-plugin-react": "^2.5.2",
+    "faker": "^3.0.1",
+    "flowcheck": "^0.2.7",
+    "flowcheck-loader": "^1.0.0",
+    "html-webpack-plugin": "^1.5.2",
+    "node-sass": "^3.3.2",
+    "opn": "^3.0.2",
+    "postcss-loader": "^0.6.0",
+    "react-hot-loader": "^1.2.7",
+    "sass-loader": "^2.0.1",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.10.0",
+    "webpack-dev-server": "^1.10.1",
+    "webpack-merge": "^0.1.1"
+  },
+  "dependencies": {
+    "alt": "^0.17.9",
+    "history": "^1.13.1",
+    "promise": "^7.0.4",
+    "react": "^0.14.2",
+    "react-router": "^1.0.0",
+    "react-spinner": "^0.2.3",
+    "react-treebeard": "^1.0.10"
+  }
+}

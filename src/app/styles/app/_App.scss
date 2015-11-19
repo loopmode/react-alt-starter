@@ -1,0 +1,52 @@
+.App {
+    max-width: 1680px;
+    margin: 0 auto;
+    font-size: 13px;
+    font-family: Roboto, Arial;
+    //outline: 1px dotted #ccc;
+    .SimpleGrid {
+        $gap: 20px;
+        .grid {
+            padding-top: $gap;
+            padding-left: $gap;
+        }
+        .cell {
+            padding-bottom: $gap;
+            padding-right: $gap;
+            width: 100%;
+            @mixin cols($n) {width: 100% / $n;}
+            @media (min-width: 640px) { @include cols(2); }
+            @media (min-width: 768px) { @include cols(3); }
+            @media (min-width: 980px) { @include cols(4); }
+            //@media (min-width: 1280px - 1px) { @include cols(5); }
+            //outline: 1px dotted #ccf;
+        }
+    }
+    .react-spinner {
+        position: absolute;
+    }
+    .react-spinner_bar {
+        background: black;
+    }
+}
+
+
+.UserPanel {
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    ul {
+        margin-bottom: 10px;
+        padding-left: 20px;
+        list-style: disc;
+    }
+    section {
+        overflow: hidden;
+    }
+    h3:first-child {
+        margin-top: 0;
+    }
+}
+.Button {
+    padding: 5px 10px;
+}
